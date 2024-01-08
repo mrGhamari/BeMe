@@ -51,5 +51,4 @@ const Images = () => {
     </div>
   );
 };
-
 export default Images;
