@@ -9,17 +9,18 @@ const Landing = () => {
       <BasePage fixed={true}>
         <>
           <div className="size-full text-center">
-            <h1>
-              <span className="font-bold text-4xl md:text-5xl text-teal-400">
-                BeMe
+            <h1 className="font-bold text-4xl md:text-5xl">
+              با
+              <span className="text-teal-400 px-2">
+                 BeMe 
               </span>
-              <span className="text-4xl md:text-5xl">.هرکی میخوای باش</span>
+              <span>هرکی میخوای باش</span>
             </h1>
           </div>
 
           <div className="text-start mt-5 mb-3">
             <h2 className="text-2xl md:text-3xl font-medium">
-              زندگی متفاوتی را تجربه کنید. الهام گرفته.
+              زندگی متفاوتی را تجربه کنید.
             </h2>
           </div>
 
