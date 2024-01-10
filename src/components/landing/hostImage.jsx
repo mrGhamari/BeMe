@@ -18,5 +18,4 @@ const hostImage = ({ hostinformation }) => {
     </div>
   );
 };
-
 export default hostImage;
