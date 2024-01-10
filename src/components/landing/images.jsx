@@ -49,12 +49,6 @@ const Images = () => {
           <Host key={index} hostinformation={item} />
         ))}
       </div>
-      {/* <div className="border-4 grid grid-cols-4">
-        <div className="border">01</div>
-        <div className="border">02</div>
-        <div className="border">03</div>
-        <div className="border">04</div>
-      </div> */}
     </>
   );
 };
