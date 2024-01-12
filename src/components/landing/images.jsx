@@ -44,7 +44,7 @@ const hostList = [
 const Images = () => {
   return (
     <>
-      <div className="grid grid-cols-12 gap-4 border-4">
+      <div className="grid grid-cols-12 gap-4 border-4s">
         {hostList.map((item, index) => (
           <Host key={index} hostinformation={item} />
         ))}
