@@ -10,8 +10,8 @@ const PolicySection = () => {
     <Container fixed>
       <ul>
         <li>
-          <a href="">d</a>
-          <a href="">d</a>
+          <a href=""></a>
+          <a href=""></a>
           <a href=""></a>
           <a href=""></a>
           <a href=""></a>
