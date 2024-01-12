@@ -1,3 +1,4 @@
+import { LandingLayout } from "@/layout/landing-layout";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -12,7 +13,9 @@ const vazirFont = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="rtl">
-      <body className={`${vazirFont.className} `}>{children}</body>
+      <body className={`${vazirFont.className} `}>
+          <LandingLayout>{children}</LandingLayout>
+      </body>
     </html>
   );
 }
