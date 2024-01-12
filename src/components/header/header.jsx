@@ -69,10 +69,10 @@ function Header() {
               display: { xs: "block", md: "none" },
             }}
           >
-            {pages.map((page, index) => {
+            {pageChange.map((page, index) => {
               return (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
+                <Link href={`/${page.route}`}><Typography textAlign="center">{page.name}</Typography></Link>
                 </MenuItem>
               );
             })}
