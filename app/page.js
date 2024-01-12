@@ -4,7 +4,7 @@ import BasePage from "../src/components/base-page/base-page.jsx";
 import Image from "next/image";
 // import { LandingLayout } from "@/layout/landing-layout/index.js";
 import Landing from "../src/components/landing/landing.jsx";
-export default function Home() {
+ const Home =  ( ) => {
   const [color, setColor] = useState("bg-teal-300");
 
   return (
@@ -17,3 +17,4 @@ export default function Home() {
     </>
   );
 }
+export default Home 

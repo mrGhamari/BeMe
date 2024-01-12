@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="rtl">
       <body className={`${vazirFont.className} `}>
-        <LandingLayout>{children}</LandingLayout>
-     </body>
+          <LandingLayout>{children}</LandingLayout>
+      </body>
     </html>
   );
 }
