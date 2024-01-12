@@ -1,3 +1,4 @@
+'use client'
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -19,7 +20,7 @@ const pageChange= [
   {name:"راهنما" , route:'guide'},
   {name:"ساز و کار" , route:'how-it-works'},
   {name:"درباره ما" , route:'about-us'},
-  {name:"پشتیبانی" , route:'poshtibani'}
+  {name:"پشتیبانی" , route:'support'}
 ];
 
 const pages = [
@@ -70,7 +71,7 @@ function Header() {
           >
             {pages.map((page, index) => {
               return (
-                <MenuItem key={1} onClick={handleCloseNavMenu}>
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               );
@@ -79,17 +80,19 @@ function Header() {
         </Box>
 
         <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-          {pageChange.map((page , index) => (
-            // <Button
-            //   key={page}
-            //   onClick={handleCloseNavMenu}
-            //   sx={{ my: 2, display: "block" }}
-            //   className="text-dark text-lg"
-            // >
-            //   {page}
-            // </Button>
-            <Link key={index} href={`/${page.route}`} className="text-dark text-lg inline-block px-3 hover:text-teal-500 hover:border-b transition-all duration-200" onClick={handleCloseNavMenu}>{page.name}</Link>
-          ))}
+          {pageChange.map((page , index) => {
+            return (
+              // <Button
+              //   key={page}
+              //   onClick={handleCloseNavMenu}
+              //   sx={{ my: 2, display: "block" }}
+              //   className="text-dark text-lg"
+              // >
+              //   {page}
+              // </Button>
+              <Link key={index} href={`/${page.route}`} className="text-dark text-lg inline-block px-3 hover:text-teal-500 hover:border-b transition-all duration-200" onClick={handleCloseNavMenu}>{page.name}</Link>
+            )
+          } )}
         </Box>
         <Image
           src={logo}
