@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 
 function FirstTextContent() {
@@ -32,6 +32,18 @@ function FirstTextContent() {
         این کارآموزی نیست. این یک دسترسی بدون دردسر به یک استخر استعدادهای متنوع
         است که یک مسیر جایگزین را به شما نشان می دهد.
       </Typography>
+
+      <Box
+        height={20}
+        width="auto"
+        my={4}
+        textAlign="center"
+        display="flex"
+        className="bg-teal-200"
+        justifyContent="center"
+      >
+        Gif image shoud be here
+      </Box>
 
       <Typography variant="h5">وارد حوزه انتخابی خود شوید</Typography>
       <Typography variant="h6" pb={2}>
