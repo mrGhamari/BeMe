@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
-import { DesktopFooter, MobileFooter } from '.'
+import DesktopFooter from './desktop-footer'
+import MobileFooter  from './mobile-footer'
 import { useMediaQuery } from '@mui/material'
 
 const Footer = () => {
