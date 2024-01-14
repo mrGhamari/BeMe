@@ -1,5 +1,5 @@
 import React from "react";
-import { VideoSection } from "./video";
+import  VideoSection  from "./video";
 
 const LandigPart2 = () => {
   return (
