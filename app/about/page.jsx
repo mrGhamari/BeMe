@@ -6,16 +6,13 @@ export default function About() {
   const [color, setColor] = useState("bg-teal-300");
   return (
     <>
-      <LandingLayout>
-        {/* <BasePage fixed={true}> */}
-        <PageContainer>
-          <FirstTextContent />
-          <section>warning box</section>
-          <div>second text</div>
-          <div>our team box</div>
-          {/* </BasePage> */}
-        </PageContainer>
-      </LandingLayout>
+      <PageContainer>
+        <FirstTextContent />
+        <section>warning box</section>
+        <div>second text</div>
+        <div>our team box</div>
+        {/* </BasePage> */}
+      </PageContainer>
     </>
   );
 }
