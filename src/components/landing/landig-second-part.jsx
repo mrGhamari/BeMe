@@ -1,4 +1,5 @@
 import React from "react";
+import  VideoSection  from "./video";
 
 const LandigPart2 = () => {
   return (
@@ -24,6 +25,7 @@ const LandigPart2 = () => {
             گیفت کارت BeMe
           </button>
         </div>
+        <VideoSection/>
       </div>
     </>
   );
