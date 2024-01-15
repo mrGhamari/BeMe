@@ -1,7 +1,10 @@
 import Link from "next/link";
 import React from "react";
 import Images from "./images";
-import { ExprienceSection, LandigPart2, PolicySection } from ".";
+// import { ExprienceSection, LandigPart2, PolicySection } from ".";
+import ExprienceSection from './exprience-section'
+import LandigPart2 from './landig-second-part'
+import PolicySection from './policy-section'
 import { BasePage } from "../base-page";
 const Landing = () => {
   return (
