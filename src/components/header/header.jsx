@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -13,32 +13,25 @@ import AdbIcon from "@mui/icons-material/Adb";
 import Image from "next/image";
 import logo from "@/public/images/logo.svg";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-const pageChange= [
-  {name:"ورود" , route:'login'},
-  {name:"ثبت‌نام" , route:'register'},
-  {name:"راهنما" , route:'guide'},
-  {name:"ساز و کار" , route:'how-it-works'},
-  {name:"درباره ما" , route:'about-us'},
-  {name:"پشتیبانی" , route:'support'}
-];
-
-const pages = [
-  "ورود",
-  "ثبت‌نام",
-  "راهنما",
-  "ساز و کار",
-  "درباره ما",
-  "پشتیبانی",
+const pageChange = [
+  { name: "ورود", route: "login" },
+  { name: "ثبت‌نام", route: "register" },
+  { name: "راهنما", route: "guide" },
+  { name: "ساز و کار", route: "how-it-works" },
+  { name: "درباره ما", route: "about" },
+  { name: "پشتیبانی", route: "support" },
 ];
 
 function Header() {
+  const router = useRouter();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleCloseNavMenu = () => setAnchorElNav(null);
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
 
   return (
-    <AppBar position="static" className="bg-white shadow-none">
+    <AppBar position="static" sx={{ bgcolor: "white", boxShadow: 'none' }}>
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
           <IconButton
@@ -47,7 +40,7 @@ function Header() {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             onClick={handleOpenNavMenu}
-            color="inherit"
+            color="pirmary"
           >
             <MenuIcon />
           </IconButton>
@@ -72,7 +65,11 @@ function Header() {
             {pageChange.map((page, index) => {
               return (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                <Link href={`/${page.route}`}><Typography textAlign="center" className="font">{page.name}</Typography></Link>
+                  <Link href={`/${page.route}`}>
+                    <Typography textAlign="center" className="font">
+                      {page.name}
+                    </Typography>
+                  </Link>
                 </MenuItem>
               );
             })}
@@ -80,7 +77,7 @@ function Header() {
         </Box>
 
         <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-          {pageChange.map((page , index) => {
+          {pageChange.map((page, index) => {
             return (
               // <Button
               //   key={page}
@@ -90,9 +87,16 @@ function Header() {
               // >
               //   {page}
               // </Button>
-              <Link key={index} href={`/${page.route}`} className="text-dark text-lg inline-block px-3 hover:text-teal-500 hover:border-b transition-all duration-200" onClick={handleCloseNavMenu}>{page.name}</Link>
-            )
-          } )}
+              <Link
+                key={index}
+                href={`/${page.route}`}
+                className="text-dark text-lg inline-block px-3 hover:text-teal-500 hover:border-b transition-all duration-200"
+                onClick={handleCloseNavMenu}
+              >
+                {page.name}
+              </Link>
+            );
+          })}
         </Box>
         <Image
           src={logo}
@@ -100,7 +104,8 @@ function Header() {
           width={45}
           height={45}
           quality={100}
-          onLoad={(e) => console.log("hi")}
+          onClick={(e) => router.push("/")}
+          style={{ cursor: "pointer" }}
         />
       </Toolbar>
     </AppBar>
