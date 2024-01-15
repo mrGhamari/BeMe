@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
-import DesktopFooter from './desktop-footer'
-import MobileFooter  from './mobile-footer'
+// import DesktopFooter from './desktop-footer'
+// import MobileFooter  from './mobile-footer'
 import { useMediaQuery } from '@mui/material'
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
     console.log('matches=',matches);
   return (
     <div className='py-10 border-t-2 border-divider mt-16s'>
-       {matches ? <DesktopFooter/> : <MobileFooter/>} 
+       {/* {matches ? <DesktopFooter/> : <MobileFooter/>}  */}
     </div>
   ) 
 }
