@@ -18,10 +18,10 @@ import { useRouter } from "next/navigation";
 const pageChange = [
   { name: "ورود", route: "login" },
   { name: "ثبت‌نام", route: "register" },
-  { name: "راهنما", route: "guide" },
   { name: "ساز و کار", route: "how-it-works" },
   { name: "درباره ما", route: "about" },
   { name: "پشتیبانی", route: "support" },
+  { name: "راهنما باش", route: "become-guide" }
 ];
 
 function Header() {

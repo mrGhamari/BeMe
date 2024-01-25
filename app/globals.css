@@ -39,3 +39,8 @@ body {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family:'vazirFont';
+  src: url('../public/font/Vazirmatn-Regular.woff2') format('woff2');
+}
+
