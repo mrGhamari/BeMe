@@ -8,10 +8,10 @@ import { PersonsCard } from ".";
 const BecomeGuide = () => {
   console.log('persons',persons);
   return (
-    <BasePage fluid={'true'} className={"border-2 border-dark "}>
+    <BasePage fluid={'true'} className={"border-2 border-dark bg-white px-0"}>
       <MuiTheme>
       <Filterbox/>
-      <PersonsCard></PersonsCard>
+      <PersonsCard/>
       </MuiTheme>
     </BasePage>
   );

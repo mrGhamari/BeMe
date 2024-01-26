@@ -34,6 +34,7 @@ module.exports = {
       "border-gray":"#ededed",
       "gray-span":"#e4e4e4",
       "divider":'#dce0e0',
+      "gray-2":"#ccc",
       "white": "#fff",
       "light-blue": "#3A63A8",
       "dark-blue": "#191E29",
