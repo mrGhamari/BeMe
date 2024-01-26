@@ -35,7 +35,7 @@ const hostList = [
     fullWidth: false,
   },
   {
-    name: "پارسا بیکی",
+    name: "ایمان حاجی علی",
     field: "عکاس",
     photo: iman1,
     fullWidth: true,
