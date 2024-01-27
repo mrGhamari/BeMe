@@ -2,8 +2,8 @@
 import {
   FirstTextContent,
   PageContainer,
-  SecondTextContent,
-  WarningBox,
+  // SecondTextContent,
+  // WarningBox,
 } from "@/components/about-us";
 import Link from "next/link";
 
@@ -12,8 +12,8 @@ export default function About() {
     <>
       <PageContainer>
         <FirstTextContent />
-        <WarningBox />
-        <SecondTextContent />
+        {/* <WarningBox />
+        <SecondTextContent /> */}
         <div className="text-center my-10 ">
           <p>
             <Link
