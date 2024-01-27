@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './public/index.html',
+    "./public/index.html",
     "./pages/**/*.{html,js,ts,jsx,tsx,mdx}",
     "./components/**/*.{html,js,ts,jsx,tsx,mdx}",
     "./app/**/*.{html,js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{html,js,ts,jsx,tsx,mdx}"
+    "./src/**/*.{html,js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
@@ -19,6 +19,7 @@ module.exports = {
       "teal-50": "#f0fdfa",
       "teal-100": "#ccfbf1",
       "teal-200": "#a7f3d0",
+      "teal-250": "#00E897",
       "teal-300": "#5eead4",
       "teal-400": "#2dd4bf",
       "teal-500": "#14b8a6",
@@ -27,17 +28,18 @@ module.exports = {
       "teal-800": "#115e59",
       "teal-900": "#134e4a",
       "teal-950": "#042f2e",
-      "dark": "#000",
+      dark: "#000",
       "light-gray": "#f5f5f5",
-      "gray":"rgb(113, 113, 113)",
-      "footer-link":"rgb(118, 118, 118)",
-      "border-gray":"#ededed",
-      "gray-span":"#e4e4e4",
-      "divider":'#dce0e0',
-      "white": "#fff",
+      gray: "rgb(113, 113, 113)",
+      "footer-link": "rgb(118, 118, 118)",
+      "border-gray": "#ededed",
+      "gray-span": "#e4e4e4",
+      divider: "#dce0e0",
+      white: "#fff",
       "light-blue": "#3A63A8",
       "dark-blue": "#191E29",
-      "rgba":"rgba(228, 246, 228, 0.3)"
+      rgba: "rgba(228, 246, 228, 0.3)",
+      "white-smoke": "#efefef",
     },
   },
   plugins: [],
