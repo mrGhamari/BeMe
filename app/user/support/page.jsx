@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Banner, Section } from "@/components/support";
 
 const Support = () => {
   return (
-    <div>Support</div>
-  )
-}
+    <>
+      <Banner />
+      <Section />
+    </>
+  );
+};
 
-export default Support
+export default Support;
