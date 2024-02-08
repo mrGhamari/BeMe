@@ -1,18 +1,55 @@
-import React from "react";
-import { Box, ImageList, ImageListItem, Paper } from "@mui/material";
+"use client";
 
-import cover from "@/public/images/cover.jfif";
+import React from "react";
+import { CardMedia, Stack, InputBase, Box, Paper } from "@mui/material";
+import { styled, alpha } from "@mui/material/styles";
+import SearchIcon from "@mui/icons-material/Search";
+import cover from "@/public/images/helpHeaderBackground.png";
+
+const Search = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  p: 4,
+  width: "100%",
+}));
 
 function Banner() {
+  console.log(cover);
   return (
-    <ImageList sx={{ width: 500, height: 450 }} cols={1} rowHeight={164}>
-      <ImageListItem>
-        <img
-          src={`${cover.src}?w=164&h=164&fit=crop&auto=format`}
-          loading="lazy"
-        />
-      </ImageListItem>
-    </ImageList>
+    <Box>
+      {/* <CardMedia
+        component="img"
+        sx={{  }}
+        image={cover.src}
+      /> */}
+      <Paper
+        sx={{
+          display: "flex",
+          background: `url(${cover.src})`,
+          height: "400px",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        width="100%"
+      >
+        <Stack
+          width={{ md: "50%", xs: "90%" }}
+          height="fit-content"
+          className="bg-white opacity-85 p-4"
+        >
+          <h1 className="text-3xl">خوش آمدی! چطور میتوانیم کمک کنیم؟</h1>
+          <Search>
+            <SearchIcon color="white" />
+            <InputBase
+              // onChange={""}
+              sx={{ fontFamily: "inherit" }}
+              placeholder="جستجوی هرچی که میخوایی"
+              inputProps={{ "aria-label": "search" }}
+            />
+          </Search>
+        </Stack>
+      </Paper>
+    </Box>
   );
 }
 
