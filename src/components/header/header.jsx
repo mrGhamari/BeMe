@@ -16,12 +16,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const pageChange = [
-  { name: "ورود", route: "authentication/login" },
-  { name: "ثبت‌نام", route: "authentication/register" },
-  { name: "راهنما", route: "user/guide" },
-  { name: "ساز و کار", route: "user/how-it-works" },
-  { name: "درباره ما", route: "user/about" },
-  { name: "پشتیبانی", route: "user/support" },
+  { name: "ورود", route: "login" },
+  { name: "ثبت‌نام", route: "register" },
+  { name: "راهنما", route: "guide" },
+  { name: "ساز و کار", route: "how-it-works" },
+  { name: "درباره ما", route: "about" },
+  { name: "پشتیبانی", route: "support" },
 ];
 
 function Header() {

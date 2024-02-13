@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en" dir="rtl">
       <body
         className={`${vazirFont.className}`}
-        style={{ backgroundColor: "#EFEFEF" }}
+        style={{ backgroundColor: "#ffffff" }}
       >
         <LandingLayout>{children}</LandingLayout>
       </body>
